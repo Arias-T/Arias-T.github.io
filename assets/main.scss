@@ -1,0 +1,51 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+/* 修改邮箱链接的样式 */
+.footer-col-1 .email-links a {
+  display: block; /* 将链接变为块级元素，使其单独占据一行，从而实现上下排列 */
+  margin-bottom: 10px; /* 在两个邮箱链接之间添加10像素的下边距，增加视觉间距 */
+  align-items: center; /* 垂直居中对齐内容 */
+}
+
+.footer-col-1 .email-links svg,
+.footer-col-1 .email-links .username {
+  vertical-align: middle; /* 将 SVG 图标和用户名文本在垂直方向上居中对齐 */
+}
+
+/* 调整页脚列的整体布局 */
+.footer-col-wrapper {
+  display: flex; /* 启用 Flexbox 布局，使子元素（三栏）可以在同一行内排列 */
+  /* 删除 justify-content: space-between;，因为我们将使用百分比宽度来控制布局 */
+  width: 100%; /* 确保页脚容器占据其父容器的全部宽度 */
+}
+
+/* 调整列的宽度 */
+.footer-col-1 {
+  flex-shrink: 0; /* 禁止第一栏在空间不足时缩小 */
+  width: 40%; /* 关键改动：将第一栏宽度设置为40%，比原来的35%增加了5% */
+}
+
+/* 为社交媒体和博客描述添加新容器并设置布局 */
+.footer-right-cols {
+  display: flex; /* 启用 Flexbox 布局，使其内部的第二栏和第三栏可以并排排列 */
+  flex-grow: 1; /* 关键改动：让右侧容器占据第一栏之外的所有剩余空间 */
+  gap: 80px; /* 在第二栏和第三栏之间添加80像素的间隙 */
+  align-items: flex-start; /* 将子元素在垂直方向上对齐到容器的顶部 */
+}
+
+/* 调整列的宽度 */
+.footer-col-2 {
+  flex-grow: 2; /* 关键改动：让第二栏占据其父容器（.footer-right-cols）中可用空间的2份 */
+  flex-shrink: 0; /* 禁止第二栏在空间不足时缩小 */
+  width: 28%; /* 关键改动：为第二栏设置一个基准宽度，用于计算 */
+}
+
+.footer-col-3 {
+  flex-grow: 2; /* 关键改动：让第三栏占据其父容器（.footer-right-cols）中可用空间的2份 */
+  flex-shrink: 0; /* 禁止第三栏在空间不足时缩小 */
+  width: 55%; /* 关键改动：为第三栏设置一个基准宽度，用于计算 */
+}
