@@ -20,7 +20,7 @@
 
 title: QS BLOG
 #email: Arias.T@Outlook.com
-description: "我不是天才，还总是三天打渔两天晒网，此网站记录了本人从零开始的英语/财务/编程学习的心路历程，我的经历仅作参考，如果能给到你启发那将是我的荣幸，同时也欢迎通过各种渠道与我进行交流和合作" # this is a new description
+description: "此网站记录了本人从零开始的英语/财务/编程学习的心路历程，我的经历仅作参考，如果能给到你启发那将是我的荣幸，同时也欢迎通过各种渠道与我进行交流和合作" # this is a new description
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
